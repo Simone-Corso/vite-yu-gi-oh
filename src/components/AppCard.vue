@@ -20,9 +20,14 @@
   <style scoped>
   .card {
     border: 1px solid #ccc;
-
-
+    padding: 10px;
+    margin: 10px;
+    width: 150px; 
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
   }
   </style>
   
-

@@ -1,7 +1,9 @@
 <template>
+  <div class="container">
   <div class="card-container">
     <Card v-for="card in cards" :key="card.id" :data="card" />
   </div>
+</div>
 </template>
 
 <script>
@@ -35,6 +37,21 @@ export default {
 
 <style>
 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container{
+  width: 1000px;
+  height: auto;
+  display: flex;
+justify-content: center;
+}
+
+body{
+  display: flex;
+  justify-content: center;
 }
 </style>
 
