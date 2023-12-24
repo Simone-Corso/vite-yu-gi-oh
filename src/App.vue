@@ -60,7 +60,7 @@ export default {
       }
     },
     filterByArchetype() {
-      // 
+      
       const url = this.selectedArchetype
         ? `https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0&archetype=${this.selectedArchetype}`
         : 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0';
@@ -68,13 +68,13 @@ export default {
       this.fetchCardsWithArchetype(url);
     },
     async fetchCardsWithArchetype(url) {
-      try {
-        const response = await axios.get(url);
-        this.cards = response.data.data;
-      } catch (error) {
-        console.error('Error fetching cards with archetype:', error);
-      }
-    },
+  try {
+    const response = await axios.get(url);
+    this.cards = response.data.data;
+  } catch (error) {
+    console.error('Error fetching cards with archetype:', error);
+  }
+},
   },
 };
 </script>
