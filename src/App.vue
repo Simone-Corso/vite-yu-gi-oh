@@ -54,7 +54,7 @@ export default {
     async fetchArchetypes() {
       try {
         const response = await axios.get('https://db.ygoprodeck.com/api/v7/archetypes.php');
-        this.archetypes = response.data.data;
+        this.archetypes = response.data;
       } catch (error) {
         console.error('Error fetching archetypes:', error);
       }
